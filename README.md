@@ -14,8 +14,8 @@ pip install -r requirements.txt
 ## Download checkpoints
 1. git clone the [stable-diffusion-v1-5](https://huggingface.co/runwayml/stable-diffusion-v1-5) from huggingface in ./checkpoints
 2. download some personalized models from [civitai](https://civitai.com/) (What I use most frequently is [dreamshaper](https://civitai.com/models/4384/dreamshaper)) in ./checkpoints/base_models
-3. download motion model from here in ./checkpoints/unet_temporal
-4. download controlnet model from here in ./checkpoints/controlnet
+3. download motion model from [here](https://huggingface.co/crishhh/animatediff_controlnet) in ./checkpoints/unet_temporal
+4. download controlnet model from [here](https://huggingface.co/crishhh/animatediff_controlnet) in ./checkpoints/controlnet
 
 ## Run the webui
 ```python
