@@ -1,5 +1,5 @@
 # controlGIF
-Animate a given image with [animatediff](https://github.com/guoyww/AnimateDiff) and controlnet
+[Image2Video] Animate a given image with [animatediff](https://github.com/guoyww/AnimateDiff) and controlnet
 
 
 [![Animation](http://img.youtube.com/vi/lwXb_cJai8w/0.jpg)](https://www.youtube.com/watch?v=lwXb_cJai8w)
