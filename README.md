@@ -2,7 +2,7 @@
 Animate a given image with [animatediff](https://github.com/guoyww/AnimateDiff) and controlnet
 
 
-[![Watch the video](https://img.youtube.com/vi/lwXb_cJai8w/maxresdefault.jpg)](https://www.youtube.com/watch?v=lwXb_cJai8w)
+[![Animation](http://img.youtube.com/vi/lwXb_cJai8w/0.jpg)](https://www.youtube.com/watch?v=lwXb_cJai8w)
 
 
 ## Setup environment
