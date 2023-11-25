@@ -1,0 +1,29 @@
+RcnzCartoon:
+  base: ""
+  path: "models/DreamBooth_LoRA/rcnzCartoon3d_v20.safetensors"
+  inference_config: "configs/inference/inference-v2.yaml"
+  motion_module:
+    - "models/Motion_Module/mm_sd_v15_v2.ckpt"
+
+  seed:           [1498123446]
+  steps:          25
+  guidance_scale: 7.5
+
+  prompt:
+    - "technicolor, vibrant, Chemical Cat, radioactive glow, Biohazard, abstract art by Petros Afshar, oversaturated"
+    - "A teddy bear wearing dungarees at the supermarket, dslr, ultra quality, sharp focus, tack sharp, dof, film grain"
+    - "best quality, hires, extremely detailed, detailed background, diffused natural lighting, (flower field, flower petals, surrounded by flowers:1.4), (zentangle, fractal art:1.3), (many colors, colorful:1.1), (1milf, matured female, face focus), seductive, wind blowing, earrings, wearing detailed exotic clothes"
+
+  n_prompt:
+    - "EasyNegative"
+    - "out of frame, tattoo, b&w, sepia, (blurry un-sharp fuzzy un-detailed skin:1.4), (twins:1.4), (geminis:1.4), (wrong eyeballs:1.1), (cloned face:1.1), (perfect skin:1.2), (mutated hands and fingers:1.3), disconnected hands, disconnected limbs, amputation, (semi-realistic, cgi, 3d, render, sketch, cartoon, drawing, anime, doll, overexposed, photoshop, oversaturated:1.4)"
+    - "EasyNegative, worst quality, low quality, zombie, logo, text, watermark, username, monochrome"
+
+
+  init_image:
+    - "/root/lh/AnimateDiffcontrolnet-main/init_images/rc1.jpeg"
+    - "/root/lh/AnimateDiffcontrolnet-main/init_images/rc2.jpeg"
+    - "/root/lh/AnimateDiffcontrolnet-main/init_images/rc3.jpeg"
+
+  sequence_images:
+    - "/root/lh/AnimateDiffcontrolnet-main/init_images/pose/openpose_samples"

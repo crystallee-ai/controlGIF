@@ -1,0 +1,24 @@
+ToonYou:
+  base: ""
+  path: "models/DreamBooth_LoRA/toonyou_beta3.safetensors"
+  inference_config: "configs/inference/inference-v2.yaml"
+  motion_module:
+    - "models/Motion_Module/mm_sd_v15_v2.ckpt"
+
+  seed:           [42]
+  steps:          25
+  guidance_scale: 7.5
+
+  prompt:
+    # - "anime, a girl with red hair and blue eyes stands in a garden, dnd avatar portrait of halfling, artgerm and atey ghailan, ios icon, style of disney animation, streaming, jazza and rossdraws, summer afternoon, beautiful and realistic faces, manga styling, animated disney movie inking, anna"
+    - "a close up of a woman holding a firework in her hand, girls frontline cg, toga, animated, thancred waters in style of wlop, stylized portrait h 1280, kanliu666, disco elysium, beautiful crying! android woman, streaming, 2d icon, chinese fantasy, manga, lava, profile picture 1024px"
+
+  n_prompt:
+    # - "forges, breaking bad, man ray 1 9 9 0, anders petersen, dark fog surrounds him, interior photograph, william s burroughs, front elevation, giger ), 2 0 0 4 photograph, memphis abstract minimal art, trent parke, floor plan, david rudnick"
+    - "ron mueck, patrick bateman), 1950s press photo, z. beksinski, conde nast traveler photo, john caple, andrei tarkovski"
+
+  
+  init_image:
+    # - "/root/lh/AnimateDiffcontrolnet-main/init_images/t1.jpeg"
+    - "/root/lh/AnimateDiffcontrolnet-main/init_images/mask2.jpg"
+

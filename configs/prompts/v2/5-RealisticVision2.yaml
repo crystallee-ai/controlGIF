@@ -1,0 +1,66 @@
+RealisticVision:
+  base: ""
+  path: "models/DreamBooth_LoRA/realisticVisionV20_v20.safetensors"
+  # path: "models/DreamBooth_LoRA/toonyou_beta3.safetensors"
+
+  inference_config: "configs/inference/inference-v2.yaml"
+  motion_module:
+    - "models/Motion_Module/mm_sd_v15_v2.ckpt"
+
+  # seed:           [13100322578370451493, 14752961627088720670, 9329399085567825781, 16987697414827649302]
+  seed:           [42]
+  steps:          25
+  guidance_scale: 7.5
+
+  prompt:
+    # - "mountain range, sky, sunset, clouds, high altitude, silvery glow."
+    # - "scuba diving, coral reef, fish, sea anemones, starfish, sea turtles, clear water, sunlight, underwater world"
+    # - "fireworks, new year, 2023, night sky, stars, ring of fire"
+    # - "woman, sand dune, sunset, desert, mountains, stillness, quiet, wind rustling through the sand"
+    # - "deer, brown, antlers, grassy hillside, misty sky"
+    # - "bird, small, brown, back, wings, white, chest, belly, black, beak, eyes, tree, deciduous, shrub, green, leaves, sky, clouds"
+    # - "man, suit, tie, building, stone, windows, dancing"
+    - "there is a mountain with a cloud in the sky and a plane flying by, 4k photo”, nivanh chanthara, sony a7r iii, nitid horizon, dark and beige atmosphere, glaciers, in praise of shadows, dribbble 8k, daopao, 70mm/f2.8, deep stillness and silence, dusk"
+    - "there is a person swimming in the ocean with a lot of fish, panoramic centered view of girl, overgrown with colorful coral, cinematic lens flare, horizon of an erupting volcano, scuba diving, layout, by Wylie Beckert, cinematic style photograph, eagle coral, travel and adventure, nature photo, shot on anamorphic lenses, interconnections, a stock photo"
+    - "fireworks are lit up in the sky to celebrate the new year, 2 0 2 3 promotional art, trending on getty, by Bracha L. Ettinger, being delighted and cheerful, sacred numbers, 2023, by Melissa A. Benson, with two arrows, photostock, in the apocalyptic future, hopeful"
+    - "araffe sitting on a sand dune in the desert at sunset, top selection on unsplash, panoramic anamorphic, by Maude Kaufman Eggemeyer, a girl with blonde hair, in a futuristic desert palace, two mountains in background, 4k. profession photography, at a deserted city, the soul creates, connectedness, by Johanna Marie Fosie"
+    - "there are two deer standing in a field with grass and bushes, 65mm 1.5x anamorphic lens, icelandic valley, true detective, film still from half-life movie, whitehorns, bluray image, filmic tonemapping, 3 5 mm close up, by Thomas Struth, puṣkaracūḍa, 4 k hd photo"
+    - "there is a small bird sitting on a branch in the woods, sony a7r -, an oil paiting of a sparrow, emulador, widescreen, burnt sienna and venetian red, in scotland, istock, 5 0 mm fe f / 1. 8, grumpy [ old ], timothy rees, locusts and flies, cute photograph, barlow"
+
+  n_prompt:
+    - ""
+    - ""
+    - ""
+    - ""
+    - ""
+    - "krysten ritter, black and white charcoal sketch, portrait of dwayne johnson, lovecraft style, cyberpunk futuristic neo, william oxer"
+    # - ""
+
+    # - "blur, haze, deformed iris, deformed pupils, semi-realistic, cgi, 3d, render, sketch, cartoon, drawing, anime, mutated hands and fingers, deformed, distorted, disfigured, poorly drawn, bad anatomy, wrong anatomy, extra limb, missing limb, floating limbs, disconnected limbs, mutation, mutated, ugly, disgusting, amputation"
+    #- "semi-realistic, cgi, 3d, render, sketch, cartoon, drawing, anime, text, close up, cropped, out of frame, worst quality, low quality, jpeg artifacts, ugly, duplicate, morbid, mutilated, extra fingers, mutated hands, poorly drawn hands, poorly drawn face, mutation, deformed, blurry, dehydrated, bad anatomy, bad proportions, extra limbs, cloned face, disfigured, gross proportions, malformed limbs, missing arms, missing legs, extra arms, extra legs, fused fingers, too many fingers, long neck"
+    # - "semi-realistic, cgi, 3d, render, sketch, cartoon, drawing, anime, text, close up, cropped, out of frame, worst quality, low quality, jpeg artifacts, ugly, duplicate, morbid, mutilated, extra fingers, mutated hands, poorly drawn hands, poorly drawn face, mutation, deformed, blurry, dehydrated, bad anatomy, bad proportions, extra limbs, cloned face, disfigured, gross proportions, malformed limbs, missing arms, missing legs, extra arms, extra legs, fused fingers, too many fingers, long neck"
+    # - "blur, haze, deformed iris, deformed pupils, semi-realistic, cgi, 3d, render, sketch, cartoon, drawing, anime, mutated hands and fingers, deformed, distorted, disfigured, poorly drawn, bad anatomy, wrong anatomy, extra limb, missing limb, floating limbs, disconnected limbs, mutation, mutated, ugly, disgusting, amputation"
+    # - "blur, haze, deformed iris, deformed pupils, semi-realistic, cgi, 3d, render, sketch, cartoon, drawing, anime, art, mutated hands and fingers, deformed, distorted, disfigured, poorly drawn, bad anatomy, wrong anatomy, extra limb, missing limb, floating limbs, disconnected limbs, mutation, mutated, ugly, disgusting, amputation"
+  
+  init_image:
+    # - "/root/lh/AnimateDiffcontrolnet-main/init_images/00.jpg"
+    - "/root/lh/AnimateDiffcontrolnet-main/init_images/111.jpg"
+    - "/root/lh/AnimateDiffcontrolnet-main/init_images/222.jpg"
+    - "/root/lh/AnimateDiffcontrolnet-main/init_images/333.jpg"
+    - "/root/lh/AnimateDiffcontrolnet-main/init_images/444.jpg"
+    - "/root/lh/AnimateDiffcontrolnet-main/init_images/555.jpg"
+    - "/root/lh/AnimateDiffcontrolnet-main/init_images/666.jpg"
+    # - "/root/lh/AnimateDiffcontrolnet-main/init_images/777.jpg"
+
+
+  # prompt:
+  #   - "b&w photo of 42 y.o man in black clothes, bald, face, half body, body, high detailed skin, skin pores, coastline, overcast weather, wind, waves, 8k uhd, dslr, soft lighting, high quality, film grain, Fujifilm XT3"
+  #   - "close up photo of a rabbit, forest, haze, halation, bloom, dramatic atmosphere, centred, rule of thirds, 200mm 1.4f macro shot"
+  #   - "photo of coastline, rocks, storm weather, wind, waves, lightning, 8k uhd, dslr, soft lighting, high quality, film grain, Fujifilm XT3"
+  #   - "night, b&w photo of old house, post apocalypse, forest, storm weather, wind, rocks, 8k uhd, dslr, soft lighting, high quality, film grain"
+
+  # n_prompt:
+  #   - "semi-realistic, cgi, 3d, render, sketch, cartoon, drawing, anime, text, close up, cropped, out of frame, worst quality, low quality, jpeg artifacts, ugly, duplicate, morbid, mutilated, extra fingers, mutated hands, poorly drawn hands, poorly drawn face, mutation, deformed, blurry, dehydrated, bad anatomy, bad proportions, extra limbs, cloned face, disfigured, gross proportions, malformed limbs, missing arms, missing legs, extra arms, extra legs, fused fingers, too many fingers, long neck"
+  #   - "semi-realistic, cgi, 3d, render, sketch, cartoon, drawing, anime, text, close up, cropped, out of frame, worst quality, low quality, jpeg artifacts, ugly, duplicate, morbid, mutilated, extra fingers, mutated hands, poorly drawn hands, poorly drawn face, mutation, deformed, blurry, dehydrated, bad anatomy, bad proportions, extra limbs, cloned face, disfigured, gross proportions, malformed limbs, missing arms, missing legs, extra arms, extra legs, fused fingers, too many fingers, long neck"
+  #   - "blur, haze, deformed iris, deformed pupils, semi-realistic, cgi, 3d, render, sketch, cartoon, drawing, anime, mutated hands and fingers, deformed, distorted, disfigured, poorly drawn, bad anatomy, wrong anatomy, extra limb, missing limb, floating limbs, disconnected limbs, mutation, mutated, ugly, disgusting, amputation"
+  #   - "blur, haze, deformed iris, deformed pupils, semi-realistic, cgi, 3d, render, sketch, cartoon, drawing, anime, art, mutated hands and fingers, deformed, distorted, disfigured, poorly drawn, bad anatomy, wrong anatomy, extra limb, missing limb, floating limbs, disconnected limbs, mutation, mutated, ugly, disgusting, amputation"

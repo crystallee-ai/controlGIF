@@ -1,0 +1,31 @@
+MajicMix:
+  base: ""
+  path: "models/DreamBooth_LoRA/majicmixRealistic_v7.safetensors"
+  inference_config: "configs/inference/inference-v2.yaml"
+  motion_module:
+    - "models/Motion_Module/mm_sd_v15_v2.ckpt"
+
+  seed:           [42]
+  steps:          25
+  guidance_scale: 7.5
+
+  prompt:
+    # - "1girl,hair with bangs,black long dress,orange background,"
+    - "1girl,sweater,white background"
+    # - "1girl,face,curly hair,white background,"
+    # - "1girl,face,white background,"
+
+  n_prompt:
+    # - "nsfw, (worst quality:2),(low quality:2),(normal quality:2),lowres,watermark,"
+    - "nsfw, (worst quality:2),(low quality:2),(normal quality:2),lowres,watermark,"
+    # - "nsfw, (worst quality:2),(low quality:2),(normal quality:2),lowres,watermark,"
+    # - "nude, nsfw, (worst quality:2),(low quality:2),(normal quality:2),lowres,watermark,"
+
+  init_image:
+    # - "/root/lh/AnimateDiffcontrolnet-main/init_images/mj1.jpeg"
+    - "/root/lh/AnimateDiffcontrolnet-main/init_images/mj2.jpeg"
+    # - "/root/lh/AnimateDiffcontrolnet-main/init_images/mj3.jpeg"
+    # - "/root/lh/AnimateDiffcontrolnet-main/init_images/mj4.jpeg"
+
+  sequence_images:
+    - "/root/lh/AnimateDiffcontrolnet-main/controlnetop/pose"

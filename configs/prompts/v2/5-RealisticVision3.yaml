@@ -1,0 +1,47 @@
+RealisticVision:
+  base: ""
+  path: "models/DreamBooth_LoRA/realisticVisionV20_v20.safetensors"
+  # path: "models/DreamBooth_LoRA/toonyou_beta3.safetensors"
+
+  inference_config: "configs/inference/inference-v2.yaml"
+  motion_module:
+    - "models/Motion_Module/mm_sd_v15_v2.ckpt"
+
+  # seed:           [13100322578370451493, 14752961627088720670, 9329399085567825781, 16987697414827649302]
+  seed:           [42]
+  steps:          25
+  guidance_scale: 7.5
+
+  prompt:
+    # - "a black and white photo of a woman, dress shirt, somewhat androgenic, one model, rugged, sydney, taken with a canon eos 5d, rugged and dirty, focus on girl, boyish, brigitte, photographed, blue steel, youth, charlie immer, without makeup, uniquely beautiful"
+    # - "a woman in a black dress posing for a picture, italian beach scene, small blond goatee, eighties look, dolce & gabbana campaign, alluring face with full makeup, wearing dress, paolo veronese style, photo still of, 18 years old , from italica, ameera al taweel, long luxurious light blond hair, old photobook, aged photo, young"
+    - "arafed black and white photo of a woman with a messy hair, artgerm and patrick demarchelier, trending in behance, volumetric lighting : :, beautiful precise face and body, gorgeous female samara weaving, beautiful male face, trending on behance, pronounced cheekbones, rugged face, freckled"
+    - "blond woman with long hair and blue eyes on the beach, in style of alasdair mclellan, stunning anime face portrait, ffffound, detailed face with moustache, unique non conventional beauty, inspired by Rebecca Guay, glowing porcelain skin, portrait of barbara palvin, evening makeup, by Marshall Arisman, margot robbie face, medium - long curly brown hair"
+
+  n_prompt:
+    - ""
+    - ""
+
+    # - "blur, haze, deformed iris, deformed pupils, semi-realistic, cgi, 3d, render, sketch, cartoon, drawing, anime, mutated hands and fingers, deformed, distorted, disfigured, poorly drawn, bad anatomy, wrong anatomy, extra limb, missing limb, floating limbs, disconnected limbs, mutation, mutated, ugly, disgusting, amputation"
+    #- "semi-realistic, cgi, 3d, render, sketch, cartoon, drawing, anime, text, close up, cropped, out of frame, worst quality, low quality, jpeg artifacts, ugly, duplicate, morbid, mutilated, extra fingers, mutated hands, poorly drawn hands, poorly drawn face, mutation, deformed, blurry, dehydrated, bad anatomy, bad proportions, extra limbs, cloned face, disfigured, gross proportions, malformed limbs, missing arms, missing legs, extra arms, extra legs, fused fingers, too many fingers, long neck"
+    # - "semi-realistic, cgi, 3d, render, sketch, cartoon, drawing, anime, text, close up, cropped, out of frame, worst quality, low quality, jpeg artifacts, ugly, duplicate, morbid, mutilated, extra fingers, mutated hands, poorly drawn hands, poorly drawn face, mutation, deformed, blurry, dehydrated, bad anatomy, bad proportions, extra limbs, cloned face, disfigured, gross proportions, malformed limbs, missing arms, missing legs, extra arms, extra legs, fused fingers, too many fingers, long neck"
+    # - "blur, haze, deformed iris, deformed pupils, semi-realistic, cgi, 3d, render, sketch, cartoon, drawing, anime, mutated hands and fingers, deformed, distorted, disfigured, poorly drawn, bad anatomy, wrong anatomy, extra limb, missing limb, floating limbs, disconnected limbs, mutation, mutated, ugly, disgusting, amputation"
+    # - "blur, haze, deformed iris, deformed pupils, semi-realistic, cgi, 3d, render, sketch, cartoon, drawing, anime, art, mutated hands and fingers, deformed, distorted, disfigured, poorly drawn, bad anatomy, wrong anatomy, extra limb, missing limb, floating limbs, disconnected limbs, mutation, mutated, ugly, disgusting, amputation"
+  
+  init_image:
+    # - "/root/lh/AnimateDiffcontrolnet-main/init_images/00.jpg"
+    - "/root/lh/AnimateDiffcontrolnet-main/init_images/4444.jpg"
+    - "/root/lh/AnimateDiffcontrolnet-main/init_images/3333.jpg"
+
+
+  # prompt:
+  #   - "b&w photo of 42 y.o man in black clothes, bald, face, half body, body, high detailed skin, skin pores, coastline, overcast weather, wind, waves, 8k uhd, dslr, soft lighting, high quality, film grain, Fujifilm XT3"
+  #   - "close up photo of a rabbit, forest, haze, halation, bloom, dramatic atmosphere, centred, rule of thirds, 200mm 1.4f macro shot"
+  #   - "photo of coastline, rocks, storm weather, wind, waves, lightning, 8k uhd, dslr, soft lighting, high quality, film grain, Fujifilm XT3"
+  #   - "night, b&w photo of old house, post apocalypse, forest, storm weather, wind, rocks, 8k uhd, dslr, soft lighting, high quality, film grain"
+
+  # n_prompt:
+  #   - "semi-realistic, cgi, 3d, render, sketch, cartoon, drawing, anime, text, close up, cropped, out of frame, worst quality, low quality, jpeg artifacts, ugly, duplicate, morbid, mutilated, extra fingers, mutated hands, poorly drawn hands, poorly drawn face, mutation, deformed, blurry, dehydrated, bad anatomy, bad proportions, extra limbs, cloned face, disfigured, gross proportions, malformed limbs, missing arms, missing legs, extra arms, extra legs, fused fingers, too many fingers, long neck"
+  #   - "semi-realistic, cgi, 3d, render, sketch, cartoon, drawing, anime, text, close up, cropped, out of frame, worst quality, low quality, jpeg artifacts, ugly, duplicate, morbid, mutilated, extra fingers, mutated hands, poorly drawn hands, poorly drawn face, mutation, deformed, blurry, dehydrated, bad anatomy, bad proportions, extra limbs, cloned face, disfigured, gross proportions, malformed limbs, missing arms, missing legs, extra arms, extra legs, fused fingers, too many fingers, long neck"
+  #   - "blur, haze, deformed iris, deformed pupils, semi-realistic, cgi, 3d, render, sketch, cartoon, drawing, anime, mutated hands and fingers, deformed, distorted, disfigured, poorly drawn, bad anatomy, wrong anatomy, extra limb, missing limb, floating limbs, disconnected limbs, mutation, mutated, ugly, disgusting, amputation"
+  #   - "blur, haze, deformed iris, deformed pupils, semi-realistic, cgi, 3d, render, sketch, cartoon, drawing, anime, art, mutated hands and fingers, deformed, distorted, disfigured, poorly drawn, bad anatomy, wrong anatomy, extra limb, missing limb, floating limbs, disconnected limbs, mutation, mutated, ugly, disgusting, amputation"
