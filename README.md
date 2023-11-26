@@ -12,6 +12,7 @@
 ```python
 conda create --name controlgif python=3.10
 conda install pytorch==1.13.1 torchvision==0.14.1 torchaudio==0.13.1 pytorch-cuda=11.7 -c pytorch -c nvidia
+# torch's version is 1.13.1 you can find other ways to install torch(cuda11.7) in https://pytorch.org/get-started/previous-versions/
 pip install -r requirements.txt
 ```
 
