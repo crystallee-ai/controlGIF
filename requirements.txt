@@ -14,9 +14,8 @@ Pillow==10.0.1
 Requests==2.31.0
 safetensors==0.3.3
 scipy==1.11.4
-torch==1.13.1
-torchvision==0.14.1
 tqdm==4.66.1
 transformers==4.33.2
 xformers==0.0.16
 imageio[ffmpeg]
+open-clip-torch

@@ -1,7 +1,6 @@
 # controlGIF
 [**Image2Video**] Animate a given image with [animatediff](https://github.com/guoyww/AnimateDiff) and controlnet
 
-
 [![Animation](http://img.youtube.com/vi/lwXb_cJai8w/0.jpg)](https://www.youtube.com/watch?v=lwXb_cJai8w)
 
 <video width="320" height="240" controls>
@@ -12,6 +11,7 @@
 ## Setup environment
 ```python
 conda create --name controlgif python=3.10
+conda install pytorch==1.13.1 torchvision==0.14.1 torchaudio==0.13.1 pytorch-cuda=11.7 -c pytorch -c nvidia
 pip install -r requirements.txt
 ```
 
