@@ -75,7 +75,7 @@ class AnimateController:
         self.pipeline              = None
         self.lora_model_state_dict = {}
         
-        self.inference_config      = OmegaConf.load("configs/inference/inference-v2.yaml")
+        self.inference_config      = OmegaConf.load("configs/inference/inference-v2-nomid.yaml")
 
     def refresh_stable_diffusion(self):
         self.stable_diffusion_list = glob(os.path.join(self.stable_diffusion_dir, "*/"))
@@ -190,7 +190,9 @@ class AnimateController:
         if base_model_dropdown == "":
             raise gr.Error(f"Please select a base DreamBooth model.")
 
-        if is_xformers_available(): self.unet.enable_xformers_memory_efficient_attention()
+        if is_xformers_available(): 
+            self.unet.enable_xformers_memory_efficient_attention()
+            self.controlnet.enable_xformers_memory_efficient_attention()
 
         pipeline = AnimationPipeline(
             vae=self.vae, text_encoder=self.text_encoder, tokenizer=self.tokenizer, unet=self.unet, controlnet=self.controlnet,
