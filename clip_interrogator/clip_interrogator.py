@@ -17,8 +17,7 @@ from safetensors.numpy import load_file, save_file
 
 CAPTION_MODELS = {
     'blip-base': 'Salesforce/blip-image-captioning-base',   # 990MB
-    # 'blip-large': 'Salesforce/blip-image-captioning-large', # 1.9GB
-    'blip-large': './blip-image-captioning-large',          # 1.9GB
+    'blip-large': 'Salesforce/blip-image-captioning-large', # 1.9GB
     'blip2-2.7b': 'Salesforce/blip2-opt-2.7b',              # 15.5GB
     'blip2-flan-t5-xl': 'Salesforce/blip2-flan-t5-xl',      # 15.77GB
     'git-large-coco': 'microsoft/git-large-coco',           # 1.58GB
