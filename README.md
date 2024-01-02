@@ -8,7 +8,7 @@
   <source src="show.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
-***Above is a video demo link, please click to get a demo presentation.***
+### Above is a video demo link, please click to get a demo presentation.
 
 ## Setup environment
 
@@ -32,7 +32,7 @@ pip install -r requirements.txt
 ```markdown
 - checkpoints
   - base_models
-  	- dreamshaper_8.safetensors
+    - dreamshaper_8.safetensors
   - controlnet
     - controlnet_checkpoint.ckpt
   - stable-diffusion-v1-5
