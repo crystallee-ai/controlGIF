@@ -1,5 +1,7 @@
 # controlGIF
 
+[<img src="https://api.gitsponsors.com/api/badge/img?id=723292645" height="20">](https://api.gitsponsors.com/api/badge/link?p=nfu/OYzxIuB4b/vGrxDIOqlx0F4AHpic6lb7C4B2LtMog4f/kYobRhQHu7TcnvF0ZwNMsm6GDd9rdsHQGIXQVRV1ripvVJ1HkmdXZINnfPEELqNdx0aU0WvT4e5CYyyjZY+RLmKjPsAjZjZAHBZsdA==)
+
 [**Image2Video**] Animate a given image with [animatediff](https://github.com/guoyww/AnimateDiff) and controlnet
 
 [![Animation](http://img.youtube.com/vi/lwXb_cJai8w/0.jpg)](https://www.youtube.com/watch?v=lwXb_cJai8w)
